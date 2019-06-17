@@ -1,4 +1,3 @@
-*.enc
 *.xml
-sessionkey
-sessionkey.* 
+*.xbrl
+*.zip

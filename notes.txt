@@ -17,6 +17,7 @@ FIN-FSA public key in Base64-coded format:
 Raportit salataan symmetrisellä 256-bittisellä AES-algoritmilla. Jokaisen salauksen yhteydessä generoidaan oma AES-salausavain (ns. sessioavain), jolla tiedosto salataan. Salaus tehdään CBC-moodissa PKCS7-paddingilla. Alustusvektori generoidaan salauksen yhteydessä ja liitetään salatun datan eteen.
 
 !Alustusvektori lisätään salaamattoman datan eteen!
+!AES avaimen pituus on 256bittiä = 32 tavua!
 
 Salausavain salataan 2048-bitisellä RSA:lla käyttäen FIVA:n julkista avainta:
 

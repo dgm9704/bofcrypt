@@ -18,7 +18,8 @@ Raportit salataan symmetrisellä 256-bittisellä AES-algoritmilla. Jokaisen sala
 
 !Alustusvektori lisätään salaamattoman datan eteen!
 !Alustusvektorin pituus = 16 tavua!
-!AES avaimen pituus on 256bittiä = 32 tavua!
+!AES avaimen pituus on 256 bittiä = 32 tavua!
+!RSA avaimen pituus on 2048 bittiä = 256 tavua!
 
 Salausavain salataan 2048-bitisellä RSA:lla käyttäen FIVA:n julkista avainta:
 

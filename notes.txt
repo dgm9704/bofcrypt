@@ -40,3 +40,6 @@ Eli salattu tiedosto on seuraavaa mallia:
   <SESSION_KEY>Base64Enc(RSAEncrypt($FivaPublicKey, $SessionKey))</SESSION_KEY>
   <OUT_BUFFER>Base64Enc((InitializationVector)(AESEncrypt($SessionKey, $PlainTextData)))</OUT_BUFFER>
 </ENCRYPTED_REPORT>
+
+HUOM:
+RSA -salaukasessa käytetään PKCS#1 v 1.5 padding

@@ -4,7 +4,7 @@ INPUTFILE=$2
 
 
 #generate session key that is used to encrypt the file
-#256 bits = 32 bytes = 65 characters in hex
+#256 bits = 32 bytes = 64 characters in hex
 #SESSIONKEY=$(openssl rand -hex 32)
 #use dummy sessionkey for debugging purposes
 SESSIONKEY="0000000000000000000000000000000000000000000000000000000000000000"

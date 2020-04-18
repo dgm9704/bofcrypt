@@ -15,5 +15,6 @@ Uses [openssl](https://www.openssl.org/) for encryption
 
 The public key was extracted from fin-fsa website
 
+Please see the [wiki](https://github.com/dgm9704/bofcrypt/wiki) for more details
 
 All comments, suggestions, bugs etc are welcome!

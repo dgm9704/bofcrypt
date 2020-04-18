@@ -6,8 +6,11 @@ An attempt to create a reference implementation for encrypting report files for 
 
 - The file is in correct format and everything looks OK on the surface
 - The session key seems to be correctly generated and encrypted
-- There is some problem that prevents the actual file content from being decrypted, 
-  most likely something wrong with salting or the initialization vector
+- There is some problem that prevents the actual file content from being decrypted
+
+## Errors produced
+ - with testing key:"Error (DecryptProcessor): The parameter is incorrect. "
+ - with key from fin-fsa website:"Error (DecryptProcessor): The specified key is not a valid size for this algorithm."
 
 
 

@@ -30,7 +30,7 @@ INPUTFILE=$2
 SESSIONKEY="0000000000000000000000000000000000000000000000000000000000000000"
 
 #initialization vector 16 bytes = 32 characters in hex
-#SESSIONKEY=$(openssl rand -hex 16)
+#IV=$(openssl rand -hex 16)
 #use dummy initializationvector for debugging purposes
 IV="00000000000000000000000000000000"
 

@@ -14,7 +14,11 @@ All comments, suggestions, bugs etc are welcome!
 
 ## usage
 ```
-./bofcrypt.sh fin-fsa-pub.pem report.xbrl > report.encrypted.xml 
+zip report.zip report.xbrl 
+
+./bofcrypt.sh fin-fsa-pub.pem report.zip > report.encrypted.xml 
 
 ./bofcrypt.sh fin-fsa-pub.pem header.xml > header.encrypted.xml 
+
+zip reportpackage.zip header.encrypted.xml report.encrypted.xml
 ```

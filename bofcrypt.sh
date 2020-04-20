@@ -25,21 +25,22 @@ INPUTFILE=$2
 
 #generate session key that is used to encrypt the file
 #256 bits = 32 bytes = 64 characters in hex
-#SESSIONKEY=$(openssl rand -hex 32)
+SESSIONKEY=$(openssl rand -hex 32)
 #use dummy sessionkey for debugging purposes
-SESSIONKEY="0000000000000000000000000000000000000000000000000000000000000000"
+#SESSIONKEY="0000000000000000000000000000000000000000000000000000000000000000"
 
 #initialization vector 16 bytes = 32 characters in hex
-#IV=$(openssl rand -hex 16)
+IV=$(openssl rand -hex 16)
 #use dummy initializationvector for debugging purposes
-IV="00000000000000000000000000000000"
+#IV="00000000000000000000000000000000"
 
 #encrypt the file using the generated session key
 #key and iv need to be in hex format 
 #also add the raw initialization vector in front
-#  use -nosalt for debugging purposes
 echo $IV | xxd -r -p > OUT_BUFFER_RAW
-openssl enc -aes-256-cbc -nosalt -K $SESSIONKEY -iv $IV -in $INPUTFILE >> OUT_BUFFER_RAW
+openssl enc -aes-256-cbc -K $SESSIONKEY -iv $IV -in $INPUTFILE >> OUT_BUFFER_RAW
+#  use -nosalt for debugging purposes
+#openssl enc -aes-256-cbc -nosalt -K $SESSIONKEY -iv $IV -in $INPUTFILE >> OUT_BUFFER_RAW
 base64 --wrap=0 OUT_BUFFER_RAW > OUT_BUFFER
 
 #encrypt the raw session key using the recipients public key

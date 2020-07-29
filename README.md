@@ -1,6 +1,12 @@
 # see also
 [my dotnet library for doing the encryption](https://github.com/dgm9704/shroud)
 
+[my dotnet library for handling XBRL reports](https://github.com/dgm9704/Xoxo)
+
+[my dotnet library for handling AIFMD reports](https://github.com/dgm9704/fame)
+
+[my dotnet library for handling FIN-FSA headers](https://github.com/dgm9704/tldr)
+
 # bofcrypt.sh
 
 A sample implementation for encrypting report files for sending to Finanssivalvonta (FIN-FSA)

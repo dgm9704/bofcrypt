@@ -1,3 +1,6 @@
+# see also
+[my dotnet library for doing the encryption](https://github.com/dgm9704/shroud)
+
 # bofcrypt.sh
 
 A sample implementation for encrypting report files for sending to Finanssivalvonta (FIN-FSA)

@@ -15,7 +15,10 @@ Uses [openssl](https://www.openssl.org/) for encryption
 
 The public key "fin-fsa-pub.pem" was extracted from fin-fsa website.
 
-There is also a public/private key pair included for testing only.
+(There is also a public/private key pair included for internal testing only.)
+
+The result has been checked against FIN-FSA testing environment for reporters.
+See: https://prod.finanssivalvonta.fi/en/publications-and-press-releases/Reporting-release/2020/reporting_release_24_2020/
 
 Please see the [wiki](https://github.com/dgm9704/bofcrypt/wiki) for more details
 
@@ -25,9 +28,9 @@ All comments, suggestions, bugs etc are welcome!
 ```
 zip report.zip report.xbrl 
 
-./bofcrypt.sh fin-fsa-pub.pem report.zip > report.encrypted.xml 
+./bofcrypt.sh keys/fin-fsa-pub.pem report.zip > report.encrypted.xml 
 
-./bofcrypt.sh fin-fsa-pub.pem header.xml > header.encrypted.xml 
+./bofcrypt.sh keys/fin-fsa-pub.pem header.xml > header.encrypted.xml 
 
 zip reportpackage.zip header.encrypted.xml report.encrypted.xml
 ```
